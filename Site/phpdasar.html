@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="shortcut icon" href="img/icon/logoweb.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Alief Aditya | My Website</title>
+    </head>
+    <style>
+      .slides h3{
+          text-shadow: 1px 1px 2px rgba(0, 0,0, 0.5);
+          font-size:25px;
+      }
+      .slides h5{
+          text-shadow: 1px 1px 2px rgba(0, 0,0, 0.5);
+          font-size:15px;
+      }
+      .jajal{
+          text-shadow: 1px 1px 2px rgba(0, 0,0, 0.5);
+      }
+      .parallax-container{
+        height:20%;
+      }
+      .flow-text{
+        padding:15px 0px;
+      }
+      .h4{
+        font-size: 5px;;
+      }
+  </style>
+
+
+
+
+  
+    <body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+        <nav class="teal lihten-2">
+            <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo flow-text">Alief Aditya</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#myproduct">Product</a></li>
+              <li><a href="#myservis">My Service</a></li>
+              <li><a href="#myportfolio">My Gallery</a></li>
+              <li><a href="#mycontact">My Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+      </div>
+
+      <!-- My Side bar -->
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a><h7 class="center bold">Web Desing By Alief Aditya (beta)</h7></a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#myproduct">Product</a></li>
+              <li><a href="#myservis">My Service</a></li>
+              <li><a href="#myportfolio">My Gallery</a></li>
+              <li><a href="#mycontact">My Contact</a></li>
+              
+      </ul>
+
+    <!-- My Slider -->
+
+    <div class="slider s12">
+        <ul class="slides s12">
+          <li>
+            <img src="../img/Home/Home1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>"Don't be afraid of being different,be afraid of being  the same  as everyone else"</h3>
+              <h5 class="light grey-text text-lighten-3">m.bola.net</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../img/Home/Home2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>"And don't tell those who have fallen in the way of Allah that they are dead ,because in fact they are alive but you don't realize it."</h3>
+              <h5 class="light grey-text text-lighten-3">Q.s Al-Baqarah/2:159</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../img/Home/Home3.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          </ul>
+        </div>
+          <!-- My About -->
+          <section class="scrollspy" id="about">
+                 <div class="container ">
+                     <div class="row">
+                         
+                     </div>
+                 </div>
+          </section>
+
+
+      <!-- Footer -->
+
+      <footer class="flow-text center teal lihten-2 white-text">
+        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefaditya2005@gmail.com">aliefaditya2005@gmail.com</a></p>
+      </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          const sideNav = document.querySelectorAll('.sidenav')
+          M.Sidenav.init(sideNav);
+
+          const slider = document.querySelectorAll('.slider')
+          M.Slider.init(slider,{
+              indicators:false,
+              height:500,
+              interval:3000
+
+          });
+          const parallax = document.querySelectorAll('.parallax')
+          M.Parallax.init(parallax);
+
+          const materialbox = document.querySelectorAll('.materialboxed')
+          M.Materialbox.init(materialbox);
+          
+          const scrollspy = document.querySelectorAll('.scrollspy')
+          M.ScrollSpy.init(scrollspy,{
+            ScrollOffset:50
+          });
+
+          
+          // My Form 
+
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbyY1zylZU6RF-XR082Nau0PUw6Tw_EDer6z2sUIqE3VNV58Ba5dhKoEGsLgqxLGlXZtQw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+          .then(response => 
+          {
+            form.reset()
+            console.log('Success!', response)})
+          .catch(error => console.error('Error!', error.message))
+      })
+
+
+
+          </script>
+    </body>
+  </html>
