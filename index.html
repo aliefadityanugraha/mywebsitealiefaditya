@@ -42,7 +42,7 @@
 
 
 
-
+<!-- My Navbar -->
   
     <body id="home" class="scrollspy">
     <div class="navbar-fixed">
@@ -59,7 +59,7 @@
               <li><a href="#mycontact">My Contact</a></li>
               <li>
                 <!-- Drop Down  -->
-                <a class='dropdown-trigger btn blue accent-4' href='#' data-target='dropdown1'>My Site</a>
+                <a class="dropdown-trigger btn blue accent-4" href='#' data-target='dropdown1'>My Site</a>
 
                 <!-- Dropdown Structure -->
                 <ul id='dropdown1' class='dropdown-content'>
@@ -102,14 +102,20 @@
           <li>
             <img src="img/Home/Home2.jpg"> <!-- random image -->
             <div class="caption left-align">
-              <h3>"And don't tell those who have fallen in the way of Allah that they are dead ,because in fact they are alive but you don't realize it."</h3>
+              <h3>
+                
+                "And don't tell those who have fallen in the way of Allah that they are dead ,because in fact they are alive but you don't realize it."
+              
+              </h3>
               <h5 class="light grey-text text-lighten-3">Q.s Al-Baqarah/2:159</h5>
             </div>
           </li>
           <li>
             <img src="img/Home/Home3.jpg"> <!-- random image -->
             <div class="caption right-align">
-              <h3>This is our big Tagline!</h3>
+              <h3> 
+                test
+            </h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
@@ -355,7 +361,7 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <input id="phone" type="text" class="validate" name="phone" required>
-                        <label for="phone">Your Contact</label>
+                        <label for="phone">Contact</label>
                       </div>
                     </div>
                     <div class="row">
@@ -387,8 +393,8 @@
         <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefalief2005@gmail.com">aliefalief2005@gmail.com</a></p>
       </footer>
 
-      <!--JavaScript at end of body for optimized loading-->
-     
+      
+     <!-- My Java Script -->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
           const sideNav = document.querySelectorAll('.sidenav')
@@ -415,21 +421,26 @@
           M.Dropdown.init(dropdown);
 
           
+
+          
           // My Form 
 
           const scriptURL = 'https://script.google.com/macros/s/AKfycbyY1zylZU6RF-XR082Nau0PUw6Tw_EDer6z2sUIqE3VNV58Ba5dhKoEGsLgqxLGlXZtQw/exec'
-      const form = document.forms['submit-to-google-sheet']
+          const form = document.forms['submit-to-google-sheet']
       
     
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           form.addEventListener('submit', e => {
+             e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
           .then(response => 
           {
             form.reset()
-            console.log('Success!', response)})
+            console.log('Success!', response)
+            M.toast({html: 'Terimakasih Tanggapan Anda Sudah Terkirim'})
+          })
           .catch(error => console.error('Error!', error.message))
+          
       })
 
 
