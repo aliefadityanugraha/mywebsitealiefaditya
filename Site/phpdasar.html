@@ -4,7 +4,7 @@
       
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="shortcut icon" href="img/icon/logoweb.png">
+      <link rel="shortcut icon" href="../img/icon/logoweb.png">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Alief Aditya | My Website</title>
     </head>
@@ -29,6 +29,9 @@
       .h4{
         font-size: 5px;;
       }
+      .h1{
+        font-size: 40px;
+      }
   </style>
 
 
@@ -40,14 +43,27 @@
         <nav class="teal lihten-2">
             <div class="container">
           <div class="nav-wrapper">
-            <a href="#home" class="brand-logo flow-text">Alief Aditya</a>
+            <a href="../index.html" class="brand-logo flow-text">Alief Aditya</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#myproduct">Product</a></li>
-              <li><a href="#myservis">My Service</a></li>
-              <li><a href="#myportfolio">My Gallery</a></li>
-              <li><a href="#mycontact">My Contact</a></li>
+              <li><a href="../index.html">About Me</a></li>
+              <li><a href="../index.html">Product</a></li>
+              <li><a href="../index.html">My Service</a></li>
+              <li><a href="../index.html">My Gallery</a></li>
+              <li><a href="../index.html">My Contact</a></li>
+              <li>
+                <!-- Drop Down  -->
+                <a class='dropdown-trigger btn blue accent-4' href='#' data-target='dropdown1'>My Site</a>
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="hdasar.html">HTML</a></li>
+                  <li><a href="cssdasar.html">CSS</a></li>
+                  <li><a href="javascripdasar.html">JavaScript</a></li>
+                  
+                  
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -58,11 +74,11 @@
 
       <ul class="sidenav" id="mobile-demo">
         <li><a><h7 class="center bold">Web Desing By Alief Aditya (beta)</h7></a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#myproduct">Product</a></li>
-              <li><a href="#myservis">My Service</a></li>
-              <li><a href="#myportfolio">My Gallery</a></li>
-              <li><a href="#mycontact">My Contact</a></li>
+        <li><a href="../index.html">About Me</a></li>
+        <li><a href="../index.html">Product</a></li>
+        <li><a href="../index.html">My Service</a></li>
+        <li><a href="../index.html">My Gallery</a></li>
+        <li><a href="../index.html">My Contact</a></li>
               
       </ul>
 
@@ -97,6 +113,7 @@
           <section class="scrollspy" id="about">
                  <div class="container ">
                      <div class="row">
+                      <h1 class="teal lihten-2-text center">COMING SOON</h1>
                          
                      </div>
                  </div>
@@ -106,7 +123,7 @@
       <!-- Footer -->
 
       <footer class="flow-text center teal lihten-2 white-text">
-        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefaditya2005@gmail.com">aliefaditya2005@gmail.com</a></p>
+        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefalief2005@gmail.com">aliefalief2005@gmail.com</a></p>
       </footer>
 
       <!--JavaScript at end of body for optimized loading-->
@@ -132,6 +149,9 @@
           M.ScrollSpy.init(scrollspy,{
             ScrollOffset:50
           });
+          const dropdown = document.querySelectorAll('.dropdown-trigger')
+          M.Dropdown.init(dropdown);
+
 
           
           // My Form 

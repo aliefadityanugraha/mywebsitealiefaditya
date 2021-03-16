@@ -5,6 +5,10 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="shortcut icon" href="img/icon/logoweb.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+      
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      
       
@@ -26,10 +30,13 @@
         height:20%;
       }
       .flow-text{
-        padding:15px 0px;
+        padding:10px 0px;
       }
       .h4{
         font-size: 5px;;
+      }
+      .slider ul li caption h3{
+        font-family:'Caveat', cursive;
       }
   </style>
 
@@ -50,6 +57,19 @@
               <li><a href="#myservis">My Service</a></li>
               <li><a href="#myportfolio">My Gallery</a></li>
               <li><a href="#mycontact">My Contact</a></li>
+              <li>
+                <!-- Drop Down  -->
+                <a class='dropdown-trigger btn blue accent-4' href='#' data-target='dropdown1'>My Site</a>
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="Site/hdasar.html">HTML</a></li>
+                  <li><a href="Site/cssdasar.html">CSS</a></li>
+                  <li><a href="Site/javascripdasar.html">JavaScript</a></li>
+                  <li><a href="Site/phpdasar.html">PHP</a></li>
+                  
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -142,13 +162,12 @@
                         <div class="card">
                           <div class="card-image">
                             <img src="img/portfolio2.jpg">
-                            <span class="card-title">HTML</span>
+                            <span class="card-title ">HTML</span>
                           </div>
                           <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <p>Apa itu HTML? , Sejarah HTML , Struktur HTML , Tag Atribut dan Element pada HTML , Code Editor , Memilih browser , Menjalankan HTML.</p>
                           </div>
-                          <div class="card-action">
+                          <div class="card-action card-panel hoverable">
                             <a href="Site/hdasar.html">Read More</a>
                           </div>
                         </div>
@@ -164,7 +183,7 @@
                             <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                           </div>
-                          <div class="card-action">
+                          <div class="card-action card-panel hoverable">
                             <a href="Site/cssdasar.html">Read More</a>
                           </div>
                         </div>
@@ -180,7 +199,7 @@
                             <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                           </div>
-                          <div class="card-action">
+                          <div class="card-action card-panel hoverable">
                             <a href="Site/javascripdasar.html">Read More</a>
                           </div>
                         </div>
@@ -196,7 +215,7 @@
                             <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                           </div>
-                          <div class="card-action">
+                          <div class="card-action card-panel hoverable">
                             <a href="Site/phpdasar.html">Read More</a>
                           </div>
                         </div>
@@ -365,7 +384,7 @@
       <!-- Footer -->
 
       <footer class="flow-text center teal lihten-2 white-text">
-        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefaditya2005@gmail.com">aliefaditya2005@gmail.com</a></p>
+        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefalief2005@gmail.com">aliefalief2005@gmail.com</a></p>
       </footer>
 
       <!--JavaScript at end of body for optimized loading-->
@@ -390,8 +409,10 @@
           
           const scrollspy = document.querySelectorAll('.scrollspy')
           M.ScrollSpy.init(scrollspy,{
-            ScrollOffset:50
+            ScrollOffset:10
           });
+          const dropdown = document.querySelectorAll('.dropdown-trigger')
+          M.Dropdown.init(dropdown);
 
           
           // My Form 

@@ -4,7 +4,7 @@
       
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="shortcut icon" href="img/icon/logoweb.png">
+      <link rel="shortcut icon" href="../img/icon/logoweb.png">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Alief Aditya | My Website</title>
     </head>
@@ -18,16 +18,30 @@
           font-size:15px;
       }
       .jajal{
-         c
+         
       }
-     .container h1{
-       font-size: 25px;
+      .container h1{
+       font-size: 30px;
        text-shadow: 1px 1px 2px rgba(0, 0,0, 0.5);
        
 
      }
+     .container h2{
+       font-size: 25px;
+       
+       
+
+     }
      .flow-text{
-       padding:15px 0px;
+       padding:10px 0px;
+     }
+     .tulisan{
+         resize:vertical;
+         width:700px;
+         height:225px;
+     }
+     .p {
+       text-align: justify;
      }
   </style>
 
@@ -36,11 +50,11 @@
 
   
     <body id="home" class="scrollspy">
-    <div class="navbar-fixed">
+    <div class="navbar-fixed s12">
         <nav class="teal lihten-2">
             <div class="container">
           <div class="nav-wrapper">
-            <a href="#home" class="brand-logo flow-text">Alief Aditya</a>
+            <a href="../index.html" class="brand-logo flow-text">Alief Aditya</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="../index.html">About Me</a></li>
@@ -48,6 +62,19 @@
               <li><a href="../index.html">My Service</a></li>
               <li><a href="../index.html">My Gallery</a></li>
               <li><a href="../index.html">My Contact</a></li>
+              <li>
+                <!-- Drop Down  -->
+                <a class='dropdown-trigger btn blue accent-4' href='#' data-target='dropdown1'>My Site</a>
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                  
+                  <li><a href="cssdasar.html">CSS</a></li>
+                  <li><a href="javascripdasar.html">JavaScript</a></li>
+                  <li><a href="phpdasar.html">PHP</a></li>
+                  
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -56,13 +83,13 @@
 
       <!-- My Side bar -->
 
-      <ul class="sidenav" id="mobile-demo">
+      <ul class="sidenav " id="mobile-demo">
         <li><a><h7 class="center bold">Web Desing By Alief Aditya (beta)</h7></a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#myproduct">Product</a></li>
-              <li><a href="#myservis">My Service</a></li>
-              <li><a href="#myportfolio">My Gallery</a></li>
-              <li><a href="#mycontact">My Contact</a></li>
+              <li><a href="../index.html">About Me</a></li>
+              <li><a href="../index.html">Product</a></li>
+              <li><a href="../index.html">My Service</a></li>
+              <li><a href="../index.html">My Gallery</a></li>
+              <li><a href="../index.html">My Contact</a></li>
               
       </ul>
 
@@ -96,7 +123,8 @@
           <!-- My About -->
           <section class="scrollspy" id="about">
                  <div class="container ">
-                   <h1>a.)Kenapa Kita haru Belajar HTML?</h1>
+                   <h1 class="teal-text center">H  T  M  L</h1>
+                   <h2 class=" light">a.)Kenapa Kita haru Belajar HTML?</h2>
                      <p>Saat ini, hampir semua orang bisa membuat website tanpa memahami coding. Padahal, penting juga lho untuk memahami pondasi pembentuk website, yaitu HTML. 
 
                       <p>Sekarang, coba bayangkan website Anda masih polos. Lalu, Anda pun menginstal tema. Sayangnya, layout website terlihat jauh dari harapan. Header terlalu besar, posisi menu hanya bisa di tengah, tampilan konten kurang cocok. Bahkan saat Anda berusaha memodifikasinya dengan plugin, hasilnya tetap tidak maksimal.</p>
@@ -104,11 +132,12 @@
                       <p>Nah supaya itu tidak terjadi, Anda perlu belajar HTML. Sehingga, kemampuan Anda tidak dibatasi oleh fitur dan template yang sudah tersedia. Jadi, Anda mampu menciptakan fungsi yang tidak dimiliki website tetangga. Menarik, bukan?</p>
                       
                       <p>Nah, Anda sudah datang ke tempat yang tepat! Di sini, kami akan mendampingi Anda belajar HTML pemula dengan cara yang sederhana. Dalam sekali baca, Anda akan memahami:</p>
-                      <ul type="circle">
+                      <ul>
+                      <li>Kenapa Kita harus belajar HTML?</li>
                       <li>Apa Itu HTML?</li
-                      <li>Sejarah HTML</li>
-                      <li>Apa Itu Tag, Elemen, dan Atribut?</li>
+                      <li>Sejarah HTML</li>                     
                       <li>Kerangka Inti HTML</li>
+                      <li>Apa Itu Tag, Elemen, dan Atribut?</li>
                       <li>Belajar HTML dengan Editor HTML</li>
                       <li>Memilih Browser Terbaik</li>
                       <li>Membuat Halaman Website Pertama</li>
@@ -120,7 +149,7 @@
                       <p>Tanpa berlama-lama lagi, yuk kita mulai perjalanan belajar HTML pemula ini!</p>
                       
                       
-                      <p>Apa Itu HTML?
+                      <p><h2 class=" light">b.)Apa Itu HTML?</h2>
                       HTML (Hypertext Markup Language) merupakan gabungan dari dua istilah: hypertext dan markup language. Apa sih itu?</p>
                       
                       <p>Hypertext yaitu dokumen berisi tautan yang memungkinkan pengguna terhubung ke halaman lain.</p>
@@ -129,7 +158,7 @@
                       
                       Jadi, HTML adalah bahasa markup untuk membuat struktur halaman website. 
                       
-                      Sejarah HTML
+                      <p><h2 class=" light">c.)Sejarah HTML</h2></p>
                       Tahun 1991 adalah saksi kelahiran HTML. Dibuat oleh seorang ilmuwan bernama Tim Berners-Lee, HTML awalnya menjadi solusi untuk memudahkan para ilmuwan dalam mengakses dokumen satu sama lain.
                       
                       Namun, siapa sangka HTML berkembang dan menjelma sebagai pondasi untuk membuat website di era terkini? Bahkan, 90.8% website di dunia menggunakan bahasa markup ini, lho. Menakjubkan, bukan?
@@ -140,64 +169,88 @@
                       Seperti yang Anda lihat, HTML5 merupakan versi paling update. Dibandingkan leluhurnya, HTML5 membawa sistem yang paling sempurna.</p>
                       
                       Karena itu, kami sarankan Anda mempelajari HTML5 supaya wawasan Anda lebih up to date dan eksekusi belajar HTML Anda juga lebih maksimal. Apalagi dengan syntax yang lebih sederhana, HTML5 sangat cocok untuk belajar HTML pemula.
-                      
-                      MENGENAL HTML5
-                      Apa Itu Tag, Elemen, dan Atribut?
-                      Agar lebih mudah belajar HTML, Anda harus berkenalan dengan tag, elemen, dan atribut. Mereka adalah tiga sekawan yang menjadi atom pembentuk HTML.
-                      
-                      Berikut masing-masing penjelasannya.
-                      
-                      Tag, digunakan sebagai awalan instruksi atau perintah yang akan dibaca web browser. Misalnya: tag <bold>. Tag ini akan meminta browser menampilkan teks dalam format tebal;
-                      Element, merupakan keseluruhan kode yang terdiri dari tag pembuka (<>) hingga tag penutup (</>). Contohnya: <h1> Contoh Elemen </h1>. Meski demikian, tidak semua tag HTML memiliki pasangan penutup;
-                      Attribute, yaitu informasi atau perintah tambahan yang berada di dalam elemen. Misalnya: <img src=”pantai.jpg” alt=”Pantai Baron.”> Elemen ini menggunakan tag <img> dengan atribut sumber gambar (src) dan alt text (alt).
-                      Setelah memahami komponen pembentuk HTML, silakan pelajari coding HTML dasar. Dengan mengetahui coding HTML dasar, Anda akan lebih siap untuk menggunakan tag HTML yang lebih menantang.
-                      
-                      KETAHUI CODING HTML DASAR
+
+                      <p><h2 class=" light">d.)Kerangka Inti HTML</h2></p>
                       Kerangka Inti HTML
                       Sampai sini, Anda sudah mengetahui apa saja atom penyusun HTML. Jika atom-atom tersebut dikumpulkan, terbentuklah dokumen HTML.
                       
                       Namun, mari usir bayangan dokumen HTML yang dipenuhi ratusan tag. Kita akan mengulik bentuk dokumen HTML paling sederhana dan menjadi kerangka inti yang menyusun setiap dokumen HTML di dunia ini.
                       
-                      <!-- <!DOCTYPE html> berfungsi untuk mendeklarasikan kepada komputer bahwa Anda akan menuliskan perintah dalam kode HTML; -->
-                      <!-- <html></html> merupakan tag yang menandakan bahwa Anda memulai dan mengakhiri dokumen dalam kode HTML; -->
-                      <!-- <head><head> diisi dengan metadata dari dokumen HTML. Seperti judul tab, deskripsi, dan lain-lain; -->
-                      <!-- <body></body> diisi dengan konten halaman website. -->
                       Setelah mengantongi kerangka inti HTML, Anda dapat melengkapinya sesuai dengan tujuan dan kebutuhan halaman website Anda.
                       
                       Bonus info, jika Anda penasaran untuk melihat dokumen HTML sebuah halaman website, silakan lakukan trik berikut: klik kanan pada mouse dan pilih ‘View page source’. Atau sederhananya dengan menekan Ctrl + U. 
                       
                       
                       
-                      Belajar HTML dengan Editor HTML
+                      <p><h2 class=" light">e.)Mengenal Tag,Element dan ,Atribut dalam HTML</h2></p>
+
+                      Apa Itu Tag, Elemen, dan Atribut?
+
+                      Agar lebih mudah belajar HTML, Anda harus berkenalan dengan tag, elemen, dan atribut. Mereka adalah tiga sekawan yang menjadi atom pembentuk HTML.
+                      
+                      Berikut masing-masing penjelasannya.
+                      
+                      Tag, digunakan sebagai awalan instruksi atau perintah yang akan dibaca web browser. Misalnya: tag <bold>. Tag ini akan meminta browser menampilkan teks dalam format tebal;
+                      Element, merupakan keseluruhan kode yang terdiri dari tag pembuka (<>) hingga tag penutup (</>). Contohnya:  Meski demikian, tidak semua tag HTML memiliki pasangan penutup;
+                      Attribute, yaitu informasi atau perintah tambahan yang berada di dalam elemen. Misalnya: Elemen ini menggunakan tag <img> dengan atribut sumber gambar (src) dan alt text (alt).
+                      Setelah memahami komponen pembentuk HTML, silakan pelajari coding HTML dasar. Dengan mengetahui coding HTML dasar, Anda akan lebih siap untuk menggunakan tag HTML yang lebih menantang.
+                      
+                      
+                      <p><h2 class=" light">f.)Belajar HTML dengan Editor HTML</h2></p>
+                      
                       Dari tadi, kita sudah mempelajari teori belajar HTML dasar. Pasti, Anda sudah tidak sabar untuk segera mempraktikkannya.
                       
                       Kalau begitu, sekarang saatnya Anda menyiapkan editor HTML. Editor HTML merupakan lembar kerja untuk membuat dan mengedit dokumen HTML.
                       
-                      Ada berbagai editor HTML yang bisa Anda gunakan secara gratis. Seperti Notepad++, Atom, Bracket, dan banyak lagi. Namun sebelum memilih editor HTML, pastikan OS komputer Anda kompatibel.
+                      Ada berbagai editor HTML yang bisa Anda gunakan secara gratis. Seperti Notepad++, Atom, Bracket, Sublime text, danada juga Visual Studio Code dan banyak lagi. Namun sebelum memilih editor HTML, pastikan OS komputer Anda kompatibel.kali ini saya menggunakkan Visual Studio Code alasanya karena memiliki banyak fitur diantaranya plugin yang dapat di install dengan mudah.
+                     
+                      <p><h2 class=" light">g.)Memilih Browser Terbaik</h2></p>
                       
-                      Nah setelah menginstal editor HTML, Anda bisa belajar HTML dengan lebih mudah. Sebab, fitur yang ditawarkan editor HTML akan mempercepat proses kerja Anda.
-                      
-                      PILIH EDITOR HTML TERBAIK
-                      Memilih Browser Terbaik
                       Setelah membuat dokumen HTML, Anda pasti ingin melihat hasilnya, bukan? Karena itu, pastikan Anda sudah memiliki web browser. Web browser merupakan aplikasi untuk mengakses dan menampilkan halaman website.
                       
                       Oleh web browser, bahasa komputer yang telah Anda buat di editor HTML akan diterjemahkan ke dalam tampilan yang dipahami manusia.
                       
-                      Nah untuk berjaga-jaga, sebaiknya siapkan minimal dua web browser. Meski sudah ada standarisasi HTML, bisa saja terjadi error sehingga tampilan antara satu web browser dengan browser lainnya berbeda.
+                      Nah untuk berjaga-jaga, sebaiknya siapkan minimal dua web browser. Meski sudah ada standarisasi HTML, bisa saja terjadi error sehingga tampilan antara satu web browser dengan browser lainnya berbeda.disini Saya menyarankan Anda menggunakkan Browser Chrome
+                      ataupun yang lainya yang memiliki fitur inspect Element.
                       
-                      PILIH BROWSER TERBAIK DAN TERCEPAT
-                      Membuat Halaman Website Pertama
-                      Sekarang, Anda sudah bisa membuat dan melihat eksekusi syntax HTML pada browser Anda. Sayangnya, halaman HTML Anda belum bisa diakses oleh publik. Alasannya, file HTML masih tersimpan dalam direktori komputer Anda saja.
-                      
-                      Karena itu, perlu untuk mengonlinekan project tersebut. Jalan tercepatnya yaitu dengan membuat website melalui layanan web hosting.
+                      <p><h2 class=" light">h.)Membuat Halaman HTML pertama Anda</h2></p>
+                      Sekarang,Coba Anda tuliskan atau Copy Html Di bawah ini ke dalam Code Editor anda:
+
+                      <textarea class="tulisan" cols="300" rows="100" >
+                          <!DOCTYPE html>
+                            <html lang="en">
+                                <head>
+                                  <meta charset="UTF-8">
+                                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                  <title>Hello World</title>
+                                </head>
+                              <body>
+                              Hello World                        
+                              </body>
+                          </html>
+                      </textarea>
+
+
+
+                          <p><ul >Penjelasan dari kode:</ul>
+                              <li type="circle">
+                                Pasangan   tag   <{HTML}> dan   <{/HTML}> berfungsi agar browser mengetahui bahwa ini adalah HTML sehingga browser akan  menerjemahkannya  sebagai  dokumen   sebagai  dokumen HTML.
+                              </li>
+                              <li type="circle">
+                                Bagian  kepala  ditandai  dengan  pasangan  tag <{HEAD}>  dan  <{/HEAD}>,  berfungsi untuk memberikan link untuk css atau link yang lainya.
+                              </li>
+                              <li type="circle">
+                                Bagian <{TITLE}> berfungsi untuk memberikan Sebuah judul pada Halaman HTML kita
+                              </li>
+                              <li type="circle">
+                                Adapun Bagian <{BODY}> disinilah kita dapat menuliskan bagian bagian pada halam an HTML kita. 
+                              </li>
+                          </p>
+
+                       <p>Anda sudah bisa membuat dan melihat eksekusi syntax HTML pada browser Anda. dengan cara simpan file ini dengan nama index.html lalu doble click pada file dengan format html. Lalu anda sudah dapat melihat website pertama anda.</p>
                       
                       Tak hanya cepat, cara pengoperasiannya juga mudah, lho. Anda bisa segera mengupload file HTML ke WordPress ataupun langsung melakukan kustomisasi melalui WordPress Editor.
-                      
-                      BACA CARA UPLOAD FILE HTML KE WORDPRESS
-                      Melengkapi Halaman Website
-                      Supaya ilmu belajar HTML dasar Anda semakin top, cobalah membuat komponen tambahan pada halaman website. Masukkan bumbu-bumbu pelengkap agar halaman website Anda makin sedap dan informatif.
-                      
-                      Anda bisa memasukkan gambar, tabel, form, ataupun komponen pelengkap lainnya. Dijamin, halaman website yang Anda sajikan akan lebih mudah dipahami, lebih menjaring peminat, dan mendatangkan keuntungan yang tidak Anda duga.
                       
                       CARA MENGATUR GAMBAR DI HTML
                       CARA MEMBUAT TABEL HTML DI WORDPRESS
@@ -240,7 +293,7 @@
       <!-- Footer -->
 
       <footer class="flow-text center teal lihten-2 white-text">
-        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefaditya2005@gmail.com">aliefaditya2005@gmail.com</a></p>
+        <p>Copyright &copy; 2021 MyDesing | Design: Alief Aditya <a href="mailto:aliefalief2005@gmail.com">aliefalief2005@gmail.com</a></p>
       </footer>
 
       <!--JavaScript at end of body for optimized loading-->
@@ -266,6 +319,9 @@
           M.ScrollSpy.init(scrollspy,{
             ScrollOffset:50
           });
+          const dropdown = document.querySelectorAll('.dropdown-trigger')
+          M.Dropdown.init(dropdown);
+
 
           
           // My Form 
